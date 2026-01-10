@@ -4,7 +4,8 @@ local M = {}
 function M.get(c)
   -- stylua: ignore
   return {
-    TelescopeBorder               = { fg = c.border, bg = c.bg_float },
+    TelescopeBorder               = { fg = c.border_highlight, bg = c.bg_float },
+    TelescopeDirIcon              = { fg = c.blue03 },
     TelescopeNormal               = { fg = c.fg, bg = c.bg_float },
     TelescopeResultsDiffAdd       = { fg = c.green03 },
     TelescopeResultsDiffChange    = { fg = c.yellow03 },

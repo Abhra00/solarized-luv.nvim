@@ -39,7 +39,7 @@ function M.get(c, options)
     NormalNC                    = { fg = c.surface00, bg = options.transparent and c.none or options.dim_inactive and c.base00 or c.bg }, -- normal text in non-current windows
     NormalSB                    = { fg = c.base04, bg = c.bg_sidebar }, -- normal text in sidebar
     NormalFloat                 = { fg = c.fg, bg = c.bg_float }, -- Normal text in floating windows.
-    FloatBorder                 = { fg = c.yellow01, bg = c.bg_float },
+    FloatBorder                 = { fg = c.border_highlight, bg = c.bg_float },
     FloatTitle                  = { fg = c.surface03, bg = c.bg_float },
     Pmenu                       = { fg = c.fg, bg = c.base02 }, -- Popup menu: normal item.
     PmenuSel                    = { fg = c.base04, bg = c.surface03, reverse = true }, -- Popup menu: selected item.

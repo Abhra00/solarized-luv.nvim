@@ -94,7 +94,7 @@ function M.setup(opts)
 
   colors.git.ignore = colors.base03
   colors.black = Util.blend_bg(colors.bg, 0.8, "#000000")
-  colors.border_highlight = colors.base04
+  colors.border_highlight = colors.yellow01
   colors.border = colors.black
 
   -- Popups always gets a darker bg
