@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Dizzy.webp" alt="Dizzy" width="40" height="40" />
-    <h3>A clean, pleasant dark theme for Neovim</h3>
-	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Dizzy" width="40" height="40" />
+    A clean, pleasant dark theme for Neovim
+	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Dizzy.webp" alt="Dizzy" width="40" height="40" />
 </h3>
 
 ![Screenshot](.github/beautified-screenshot.png)
