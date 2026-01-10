@@ -1,5 +1,7 @@
 local M = {}
 
+M.url = "https://github.com/nvim-telescope/telescope.nvim"
+
 ---@type solarized-luv.HighlightsFn
 function M.get(c)
   -- stylua: ignore

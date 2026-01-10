@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
+#!/usr/bin/env bash
+
 set -e
 
 # Colors for output
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
@@ -17,10 +19,12 @@ cd "$ROOT_DIR"
 # Create docs directory if it doesn't exist
 mkdir -p docs
 
-# Generate docs
+# Fix: Add the /lua folder to the Neovim runtime path
+# This allows 'require' to find your local files
+export XDG_CONFIG_HOME="$ROOT_DIR"
+export LUA_PATH="$ROOT_DIR/lua/?.lua;$ROOT_DIR/lua/?/init.lua;;"
+
+# Generate docs using the -l flag
 nvim --headless -u NONE -l lua/solarized-luv/docs.lua
 
 echo -e "${GREEN}✓ Documentation generated successfully!${NC}"
-echo ""
-echo "Generated files:"
-ls -lh docs/*.md 2>/dev/null || echo "No files generated"
