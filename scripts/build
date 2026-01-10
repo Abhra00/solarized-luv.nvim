@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Generate extra theme files for solarized-luv
+# Usage: ./scripts/generate-extras.sh
+
+set -e
+
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+echo -e "${YELLOW}Generating solarized-luv extras...${NC}"
+
+cd "$ROOT_DIR"
+
+nvim --headless -u NONE \
+  -c "set rtp+=." \
+  -c "lua require('solarized-luv.extra')" \
+  -c "qa"
+
+echo -e "${GREEN}✓ Extras generated successfully!${NC}"
+echo ""
+echo "Generated files in extras/ directory:"
+find extras -type f 2>/dev/null | sort || echo "No files generated"

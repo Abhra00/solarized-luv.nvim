@@ -1,0 +1,30 @@
+# ┏┓┏┓┓ ┏┓┳┓┳┏┓┏┓┳┓  ┓ ┳┳┓┏
+# ┗┓┃┃┃ ┣┫┣┫┃┏┛┣ ┃┃━━┃ ┃┃┃┃
+# ┗┛┗┛┗┛┛┗┛┗┻┗┛┗┛┻┛  ┗┛┗┛┗┛
+# Solarized-luv (Author: Bugs)
+#
+
+palette = 0=#001116
+palette = 1=#dc322f
+palette = 2=#859900
+palette = 3=#b58900
+palette = 4=#268bd2
+palette = 5=#d33682
+palette = 6=#2aa198
+palette = 7=#839496
+palette = 8=#073642
+palette = 9=#fb322d
+palette = 10=#a0b800
+palette = 11=#f7bc00
+palette = 12=#32a6f9
+palette = 13=#ff1a97
+palette = 14=#36c7bc
+palette = 15=#ffffff
+
+background = #00151b
+foreground = #839496
+cursor-color = cell-foreground
+cursor-text = cell-background
+selection-background = #083046
+selection-foreground = #839496
+split-divider-color = #32a6f9
