@@ -1,6 +1,6 @@
 local M = {}
 
----@type solarized-luv.HighlightsFn
+---@type solarized_luv.HighlightsFn
 function M.get(c, options)
   -- stylua: ignore
   return {

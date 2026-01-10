@@ -66,7 +66,7 @@ M.styles = {
   palette = M.palette,
 }
 
----@param opts? solarized-luv.Config
+---@param opts? solarized_luv.Config
 function M.setup(opts)
   opts = require("solarized-luv.config").extend(opts)
 
@@ -94,7 +94,7 @@ function M.setup(opts)
 
   colors.git.ignore = colors.base03
   colors.black = Util.blend_bg(colors.bg, 0.8, "#000000")
-  colors.border_highlight = colors.yellow01
+  colors.border_highlight = colors.base03
   colors.border = colors.black
 
   -- Popups always gets a darker bg
@@ -111,6 +111,8 @@ function M.setup(opts)
   colors.bg_float = opts.styles.floats == "transparent" and colors.none
     or opts.styles.floats == "dark" and colors.base00
     or colors.bg
+
+  colors.float_title = colors.blue02
 
   colors.bg_visual = Util.blend_bg(colors.blue01, 0.4)
   colors.bg_search = colors.blue01

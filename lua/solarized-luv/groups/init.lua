@@ -7,10 +7,10 @@ local M = {}
 M.plugins = {
   -- ["aerial.nvim"]                   = "aerial",
   -- ["ale"]                           = "ale",
-  -- ["alpha-nvim"]                    = "alpha",
-  -- ["barbar.nvim"]                   = "barbar",
-  -- ["blink.cmp"]                     = "blink",
-  -- ["bufferline.nvim"]               = "bufferline",
+  ["alpha-nvim"]                    = "alpha",
+  ["barbar.nvim"]                   = "barbar",
+  ["blink.cmp"]                     = "blink",
+  ["bufferline.nvim"]               = "bufferline",
   -- ["codeium.nvim"]                  = "codeium",
   -- ["copilot.lua"]                   = "copilot",
   -- ["dashboard-nvim"]                = "dashboard",
@@ -32,9 +32,9 @@ M.plugins = {
   -- ["mini.deps"]                     = "mini_deps",
   -- ["mini.diff"]                     = "mini_diff",
   -- ["mini.files"]                    = "mini_files",
-  -- ["mini.hipatterns"]               = "mini_hipatterns",
-  -- ["mini.icons"]                    = "mini_icons",
-  -- ["mini.indentscope"]              = "mini_indentscope",
+  ["mini.hipatterns"]               = "mini_hipatterns",
+  ["mini.icons"]                    = "mini_icons",
+  ["mini.indentscope"]              = "mini_indentscope",
   -- ["mini.jump"]                     = "mini_jump",
   -- ["mini.map"]                      = "mini_map",
   -- ["mini.notify"]                   = "mini_notify",
@@ -53,7 +53,7 @@ M.plugins = {
   -- ["nvim-cmp"]                      = "cmp",
   -- ["nvim-dap"]                      = "dap",
   -- ["nvim-navic"]                    = "navic",
-  -- ["nvim-notify"]                   = "notify",
+  ["nvim-notify"]                   = "notify",
   -- ["nvim-scrollbar"]                = "scrollbar",
   -- ["nvim-tree.lua"]                 = "nvim-tree",
   ["nvim-treesitter-context"]       = "treesitter-context",
@@ -62,7 +62,7 @@ M.plugins = {
   -- ["render-markdown.nvim"]          = "render-markdown",
   -- ["sidekick.nvim"]                 = "sidekick",
   -- ["snacks.nvim"]                   = "snacks",
-  -- ["supermaven-nvim"]               = "supermaven", 
+  -- ["supermaven-nvim"]               = "supermaven",
   ["telescope.nvim"]                = "telescope",
   -- ["trouble.nvim"]                  = "trouble",
   -- ["vim-gitgutter"]                 = "gitgutter",
@@ -78,19 +78,19 @@ local me = debug.getinfo(1, "S").source:sub(2)
 me = vim.fn.fnamemodify(me, ":h")
 
 function M.get_group(name)
-  ---@type {get: solarized-luv.HighlightsFn, url: string}
+  ---@type {get: solarized_luv.HighlightsFn, url: string}
   return Util.mod("solarized-luv.groups." .. name)
 end
 
 ---@param colors ColorScheme
----@param opts solarized-luv.Config
+---@param opts solarized_luv.Config
 function M.get(name, colors, opts)
   local mod = M.get_group(name)
   return mod.get(colors, opts)
 end
 
 ---@param colors ColorScheme
----@param opts solarized-luv.Config
+---@param opts solarized_luv.Config
 function M.setup(colors, opts)
   local groups = {
     editor = true,

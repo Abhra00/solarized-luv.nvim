@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
 
----@type solarized-luv.HighlightsFn
+---@type solarized_luv.HighlightsFn
 function M.get(c)
   -- stylua: ignore
   return {

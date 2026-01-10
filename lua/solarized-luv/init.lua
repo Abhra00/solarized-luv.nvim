@@ -1,7 +1,7 @@
 local config = require("solarized-luv.config")
 local M = {}
 
----@param opts? solarized-luv.Config
+---@param opts? solarized_luv.Config
 function M.load(opts)
   opts = require("solarized-luv.config").extend(opts)
   -- This theme is dark only

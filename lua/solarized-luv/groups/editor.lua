@@ -2,7 +2,7 @@ local Util = require("solarized-luv.util")
 
 local M = {}
 
----@type solarized-luv.HighlightsFn
+---@type solarized_luv.HighlightsFn
 function M.get(c, options)
   -- stylua: ignore
   return {
@@ -13,7 +13,7 @@ function M.get(c, options)
     lCursor                     = { fg = c.base01, bg = c.surface00 }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM                    = { fg = c.base01, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn                = { bg = c.base02 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine                  = { bg = c.base01, sp = c.surface02 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine                  = { bg = c.base02, sp = c.surface02 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory                   = { fg = c.blue02 }, -- directory names (and other special names in listings)
     DiffAdd                     = { fg = c.diff.add, bg = c.base02, bold = true }, -- diff mode: Added line |diff.txt|
     DiffChange                  = { fg = c.diff.change, bg = c.base02, bold = true }, -- diff mode: Changed line |diff.txt|
@@ -40,7 +40,7 @@ function M.get(c, options)
     NormalSB                    = { fg = c.base04, bg = c.bg_sidebar }, -- normal text in sidebar
     NormalFloat                 = { fg = c.fg, bg = c.bg_float }, -- Normal text in floating windows.
     FloatBorder                 = { fg = c.border_highlight, bg = c.bg_float },
-    FloatTitle                  = { fg = c.surface03, bg = c.bg_float },
+    FloatTitle                  = { fg = c.float_title, bg = c.bg_float },
     Pmenu                       = { fg = c.fg, bg = c.base02 }, -- Popup menu: normal item.
     PmenuSel                    = { fg = c.base04, bg = c.surface03, reverse = true }, -- Popup menu: selected item.
     PmenuSbar                   = { fg = c.base02, reverse = true }, -- Popup menu: scrollbar.
@@ -62,7 +62,7 @@ function M.get(c, options)
     TabLineSel                  = { fg = c.yellow02, bg = c.bg }, -- tab pages line, active tab page label
     Title                       = { fg = c.orange02, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
     Visual                      = { bg = c.base02 }, -- Visual mode selection
-    VisualNOS                   = { bg = c.base01, reverse = true }, -- Visual mode selection when vim is "Not Owning the Selection".
+    VisualNOS                   = { bg = c.base03, reverse = true }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg                  = { fg = c.orange02, bold = true }, -- warning messages
     Whitespace                  = { fg = c.base04 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu                    = { fg = c.surface03, bg = c.base02, reverse = true }, -- current match in 'wildmenu' completion
@@ -73,7 +73,7 @@ function M.get(c, options)
     LspReferenceText            = { bg = c.magenta00 }, -- used for highlighting "text" references
     LspReferenceRead            = { bg = c.magenta00 }, -- used for highlighting "read" references
     LspReferenceWrite           = { bg = c.magenta00 }, -- used for highlighting "write" references
-    LspSignatureActiveParameter = { bg = c.base01, bold = true },
+    LspSignatureActiveParameter = { bg = c.base03, bold = true },
     LspCodeLens                 = { fg = c.base04 },
     LspInlayHint                = { bg = c.violet00, fg = c.violet02 },
     LspInfoBorder               = { fg = c.base02, bg = c.bg_float },

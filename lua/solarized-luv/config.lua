@@ -2,9 +2,9 @@ local M = {}
 
 M.version = "0.1.0" -- x-release-please-version
 
----@class solarized-luv.Config
+---@class solarized_luv.Config
 ---@field on_colors fun(colors: ColorScheme)
----@field on_highlights fun(highlights: solarized-luv.Highlights, colors: ColorScheme)
+---@field on_highlights fun(highlights: solarized_luv.Highlights, colors: ColorScheme)
 M.defaults = {
   transparent = false, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
@@ -29,7 +29,7 @@ M.defaults = {
 
   --- You can override specific highlights to use other groups or a hex color
   --- function will be called with a Highlights and ColorScheme table
-  ---@param highlights solarized-luv.Highlights
+  ---@param highlights solarized_luv.Highlights
   ---@param colors ColorScheme
   on_highlights = function(highlights, colors) end,
 
@@ -50,15 +50,15 @@ M.defaults = {
   },
 }
 
----@type solarized-luv.Config
+---@type solarized_luv.Config
 M.options = nil
 
----@param options? solarized-luv.Config
+---@param options? solarized_luv.Config
 function M.setup(options)
   M.options = vim.tbl_deep_extend("force", {}, M.defaults, options or {})
 end
 
----@param opts? solarized-luv.Config
+---@param opts? solarized_luv.Config
 function M.extend(opts)
   return opts and vim.tbl_deep_extend("force", {}, M.options, opts) or M.options
 end

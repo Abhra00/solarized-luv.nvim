@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/lewis6991/gitsigns.nvim"
 
----@type solarized-luv.HighlightsFn
+---@type solarized_luv.HighlightsFn
 function M.get(c, opts)
   -- stylua: ignore
   return {

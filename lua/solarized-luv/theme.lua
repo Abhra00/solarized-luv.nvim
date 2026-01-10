@@ -1,6 +1,6 @@
 local M = {}
 
----@param opts? solarized-luv.Config
+---@param opts? solarized_luv.Config
 function M.setup(opts)
   opts = require("solarized-luv.config").extend(opts)
 

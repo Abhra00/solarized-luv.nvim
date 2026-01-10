@@ -70,7 +70,7 @@ function M.brighten(color, lightness_amount, saturation_amount)
   return hsluv.hsluv_to_hex(hsl)
 end
 
----@param groups solarized-luv.Highlights
+---@param groups solarized_luv.Highlights
 ---@return table<string, vim.api.keyset.highlight>
 function M.resolve(groups)
   for _, hl in pairs(groups) do
