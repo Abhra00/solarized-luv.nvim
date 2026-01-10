@@ -87,9 +87,9 @@ function M.setup(opts)
   }
 
   colors.git = {
-    add = colors.green03,
-    change = colors.yellow03,
-    delete = colors.red03,
+    add = colors.green02,
+    change = colors.yellow02,
+    delete = colors.red02,
   }
 
   colors.git.ignore = colors.base03
@@ -117,11 +117,11 @@ function M.setup(opts)
   colors.fg_sidebar = colors.surface03
   colors.fg_float = colors.fg
 
-  colors.error = colors.red03
-  colors.todo = colors.violet03
-  colors.warning = colors.yellow03
-  colors.info = colors.blue03
-  colors.hint = colors.cyan03
+  colors.error = colors.red02
+  colors.todo = colors.violet02
+  colors.warning = colors.yellow02
+  colors.info = colors.blue02
+  colors.hint = colors.cyan02
 
   colors.rainbow = {
     colors.blue02,
