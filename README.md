@@ -4,6 +4,7 @@
 	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
 </h3>
 
+![Screenshot](.github/beautified-screenshot.png)
 
 
 <details>
