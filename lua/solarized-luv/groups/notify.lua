@@ -10,23 +10,23 @@ function M.get(c, opts)
   return {
     NotifyBackground  = { fg = c.fg, bg = c.bg },
     --- Border
-    NotifyERRORBorder = { fg = Util.darken(c.error, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyWARNBorder  = { fg = Util.darken(c.warning, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyINFOBorder  = { fg = Util.darken(c.info, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyDEBUGBorder = { fg = Util.darken(c.base03, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyTRACEBorder = { fg = Util.darken(c.violet02, 0.3), bg = opts.transparent and c.none or c.bg },
+    NotifyERRORBorder = { fg = Util.blend_bg(c.error, 0.3), bg = opts.transparent and c.none or c.bg },
+    NotifyWARNBorder  = { fg = Util.blend_bg(c.warning, 0.3), bg = opts.transparent and c.none or c.bg },
+    NotifyINFOBorder  = { fg = Util.blend_bg(c.info, 0.3), bg = opts.transparent and c.none or c.bg },
+    NotifyDEBUGBorder = { fg = Util.blend_bg(c.base04, 0.3), bg = opts.transparent and c.none or c.bg },
+    NotifyTRACEBorder = { fg = Util.blend_bg(c.violet02, 0.3), bg = opts.transparent and c.none or c.bg },
     --- Icons
     NotifyERRORIcon   = { fg = c.error },
     NotifyWARNIcon    = { fg = c.warning },
     NotifyINFOIcon    = { fg = c.info },
-    NotifyDEBUGIcon   = { fg = c.base01 },
-    NotifyTRACEIcon   = { fg = c.violet500 },
+    NotifyDEBUGIcon   = { fg = c.base04 },
+    NotifyTRACEIcon   = { fg = c.violet02 },
     --- Title
     NotifyERRORTitle  = { fg = c.error },
     NotifyWARNTitle   = { fg = c.warning },
     NotifyINFOTitle   = { fg = c.info },
-    NotifyDEBUGTitle  = { fg = c.base01 },
-    NotifyTRACETitle  = { fg = c.violet500 },
+    NotifyDEBUGTitle  = { fg = c.base04 },
+    NotifyTRACETitle  = { fg = c.violet02 },
     --- Body
     NotifyERRORBody   = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
     NotifyWARNBody    = { fg = c.fg, bg = opts.transparent and c.none or c.bg },

@@ -8,7 +8,7 @@ function M.get(c, opts)
   local ret = {
     BlinkCmpDoc                 = { fg = c.fg, bg = c.bg_float },
     BlinkCmpDocBorder           = { fg = c.border_highlight, bg = c.bg_float },
-    BlinkCmpGhostText           = { fg = c.base03 },
+    BlinkCmpGhostText           = { fg = c.surface00 },
     BlinkCmpKindCodeium         = { fg = c.cyan02, bg = c.none },
     BlinkCmpKindCopilot         = { fg = c.cyan02, bg = c.none },
     BlinkCmpKindDefault         = { fg = c.surface00, bg = c.none },
