@@ -80,16 +80,16 @@ function M.setup(opts)
   colors.none = "NONE"
 
   colors.diff = {
-    add = colors.green01,
-    delete = colors.red01,
-    change = colors.yellow01,
-    text = colors.blue01,
+    add = colors.green03,
+    delete = colors.red03,
+    change = colors.yellow03,
+    text = colors.blue03,
   }
 
   colors.git = {
-    add = colors.green02,
-    change = colors.yellow02,
-    delete = colors.red02,
+    add = colors.green01,
+    change = colors.yellow01,
+    delete = colors.red01,
   }
 
   colors.git.ignore = colors.base03
