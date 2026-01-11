@@ -10,10 +10,10 @@ function M.get(c)
     TelescopeNormal               = { fg = c.fg, bg = c.bg_float },
     TelescopeTitle                = { fg = c.float_title, bg = c.bg_float },
     TelescopeDirIcon              = { fg = c.blue02 },
-    TelescopeResultsDiffAdd       = { fg = c.green03 },
-    TelescopeResultsDiffChange    = { fg = c.yellow03 },
-    TelescopeResultsDiffDelete    = { fg = c.red03 },
-    TelescopeResultsDiffUntracked = { fg = c.orange03 },
+    TelescopeResultsDiffAdd       = { fg = c.git.add },
+    TelescopeResultsDiffChange    = { fg = c.git.change },
+    TelescopeResultsDiffDelete    = { fg = c.git.delete },
+    TelescopeResultsDiffUntracked = { fg = c.git.ignore },
   }
 end
 
