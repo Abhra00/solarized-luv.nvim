@@ -56,7 +56,7 @@ function M.get(c, options)
     SpellLocal                  = { sp = c.cyan02, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare                   = { sp = c.yellow02, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
     StatusLine                  = { fg = c.surface02, bg = c.bg_statusline }, -- status line of current window
-    StatusLineNC                = { fg = options.hide_inactive_statusline and c.bg or c.fg, bg = options.hide_inactive_statusline and c.none or c.base00, sp = options.hide_inactive_statusline and c.border or c.none, underline = options.hide_inactive_statusline and true or false }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLineNC                = { fg = c.surface01, bg = c.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine                     = { fg = c.fg, bg = c.bg_statusline }, -- tab pages line, not active tab page label
     TabLineFill                 = { fg = c.fg, bg = options.transparent and c.none or c.base02 }, -- tab pages line, where there are no labels
     TabLineSel                  = { fg = c.yellow02, bg = c.bg }, -- tab pages line, active tab page label
@@ -76,7 +76,7 @@ function M.get(c, options)
     LspSignatureActiveParameter = { bg = c.base03, bold = true },
     LspCodeLens                 = { fg = c.base04 },
     LspInlayHint                = { bg = c.violet00, fg = c.violet02 },
-    LspInfoBorder               = { fg = c.base02, bg = c.bg_float },
+    LspInfoBorder               = { fg = c.border_highlight, bg = c.bg_float },
 
     -- diagnostics
     DiagnosticError             = { fg = c.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default

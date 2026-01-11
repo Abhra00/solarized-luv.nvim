@@ -9,7 +9,7 @@ function M.get(c)
     TelescopeBorder               = { fg = c.border_highlight, bg = c.bg_float },
     TelescopeNormal               = { fg = c.fg, bg = c.bg_float },
     TelescopeTitle                = { fg = c.float_title, bg = c.bg_float },
-    TelescopeDirIcon              = { fg = c.blue03 },
+    TelescopeDirIcon              = { fg = c.blue02 },
     TelescopeResultsDiffAdd       = { fg = c.green03 },
     TelescopeResultsDiffChange    = { fg = c.yellow03 },
     TelescopeResultsDiffDelete    = { fg = c.red03 },
