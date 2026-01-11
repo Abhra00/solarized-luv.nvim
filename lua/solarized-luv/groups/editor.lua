@@ -10,7 +10,7 @@ function M.get(c, options)
     ColorColumn                 = { bg = c.base02 }, -- used for the columns set with 'colorcolumn'
     Conceal                     = { fg = c.blue02 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor                      = { fg = c.base01, bg = c.fg }, -- character under the cursor
-    lCursor                     = { fg = c.base01, bg = c.surface00 }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
+    lCursor                     = { fg = c.base01, bg = c.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM                    = { fg = c.base01, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn                = { bg = c.base02 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine                  = { bg = c.base02, sp = c.surface02 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
@@ -55,8 +55,8 @@ function M.get(c, options)
     SpellCap                    = { sp = c.violet02, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal                  = { sp = c.cyan02, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare                   = { sp = c.yellow02, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    StatusLine                  = { fg = c.surface02, bg = c.bg_statusline }, -- status line of current window
-    StatusLineNC                = { fg = c.surface01, bg = c.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLine                  = { fg = c.surface01, bg = c.bg_statusline }, -- status line of current window
+    StatusLineNC                = { fg = c.fg_sidebar, bg = c.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine                     = { fg = c.fg, bg = c.bg_statusline }, -- tab pages line, not active tab page label
     TabLineFill                 = { fg = c.fg, bg = options.transparent and c.none or c.base02 }, -- tab pages line, where there are no labels
     TabLineSel                  = { fg = c.yellow02, bg = c.bg }, -- tab pages line, active tab page label
@@ -73,7 +73,7 @@ function M.get(c, options)
     LspReferenceText            = { bg = c.magenta00 }, -- used for highlighting "text" references
     LspReferenceRead            = { bg = c.magenta00 }, -- used for highlighting "read" references
     LspReferenceWrite           = { bg = c.magenta00 }, -- used for highlighting "write" references
-    LspSignatureActiveParameter = { bg = c.base03, bold = true },
+    LspSignatureActiveParameter = { bg = c.violet00, bold = true },
     LspCodeLens                 = { fg = c.base04 },
     LspInlayHint                = { bg = c.violet00, fg = c.violet02 },
     LspInfoBorder               = { fg = c.border_highlight, bg = c.bg_float },

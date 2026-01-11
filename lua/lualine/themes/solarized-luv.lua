@@ -5,7 +5,7 @@ local M = {}
 M.normal = {
   a = { bg = colors.blue02, fg = colors.black },
   b = { bg = colors.surface00, fg = colors.base00 },
-  c = { bg = colors.bg_statusline, fg = colors.fg },
+  c = { bg = colors.bg_statusline, fg = colors.fg_sidebar },
 }
 
 M.insert = {
