@@ -70,7 +70,7 @@ M.plugins = {
   -- ["vim-illuminate"]                = "illuminate",
   -- ["vim-sneak"]                     = "sneak",
   -- ["vimwiki"]                       = "vimwiki",
-  -- ["which-key.nvim"]                = "which-key",
+  ["which-key.nvim"]                = "which-key",
   -- ["yanky.nvim"]                    = "yanky"
 }
 
