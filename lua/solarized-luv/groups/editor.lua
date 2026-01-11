@@ -46,9 +46,9 @@ function M.get(c, options)
     PmenuSbar                   = { fg = c.base02, reverse = true }, -- Popup menu: scrollbar.
     PmenuThumb                  = { fg = c.fg, reverse = true }, -- Popup menu: Thumb of the scrollbar.
     Question                    = { fg = c.cyan02, bold = true }, -- |hit-enter| prompt and yes/no questions
-    QuickFixLine                = { bg = c.blue01, bold = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search                      = { fg = c.yellow02, reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    IncSearch                   = { fg = c.surface03, bg = c.orange02 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    QuickFixLine                = { bg = c.bg_visual, bold = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    Search                      = { fg = c.yellow03, bg = c.bg_search }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+    IncSearch                   = { fg = c.orange03, bg = c.orange00 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch                   = "IncSearch",
     SpecialKey                  = { fg = c.surface00 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad                    = { sp = c.red02, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
@@ -61,11 +61,11 @@ function M.get(c, options)
     TabLineFill                 = { fg = c.fg, bg = options.transparent and c.none or c.base02 }, -- tab pages line, where there are no labels
     TabLineSel                  = { fg = c.yellow02, bg = c.bg }, -- tab pages line, active tab page label
     Title                       = { fg = c.orange02, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
-    Visual                      = { bg = c.base02 }, -- Visual mode selection
-    VisualNOS                   = { bg = c.base03, reverse = true }, -- Visual mode selection when vim is "Not Owning the Selection".
+    Visual                      = { bg = c.bg_visual }, -- Visual mode selection
+    VisualNOS                   = { bg = c.bg_visual, reverse = true }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg                  = { fg = c.orange02, bold = true }, -- warning messages
     Whitespace                  = { fg = c.base04 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    WildMenu                    = { fg = c.surface03, bg = c.base02, reverse = true }, -- current match in 'wildmenu' completion
+    WildMenu                    = { fg = c.bg_visual, bg = c.base02, reverse = true }, -- current match in 'wildmenu' completion
     WinBar                      = "StatusLine", -- window bar
     WinBarNC                    = "StatusLineNC", -- window bar in inactive windows
 
@@ -102,8 +102,8 @@ function M.get(c, options)
     diffAdded                   = { bg = c.diff.add, fg = c.git.add },
     diffRemoved                 = { bg = c.diff.delete, fg = c.git.delete },
     diffChanged                 = { bg = c.diff.change, fg = c.git.change },
-    diffOldFile                 = { fg = c.blue00, bg=c.diff.delete },
-    diffNewFile                 = { fg = c.blue00, bg=c.diff.add },
+    diffOldFile                 = { fg = c.blue02, bg = c.diff.delete },
+    diffNewFile                 = { fg = c.blue02, bg = c.diff.add },
     diffFile                    = { fg = c.blue02 },
     diffLine                    = { fg = c.base03 },
     diffIndexLine               = { fg = c.magenta02 },
