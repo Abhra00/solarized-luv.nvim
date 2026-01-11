@@ -1,6 +1,6 @@
 # Solarized-luv color palette
 set -l foreground 93a1a1
-set -l selection 08364f
+set -l selection 08334a
 set -l comment 586e75
 set -l red fb322d
 set -l orange f55c1d

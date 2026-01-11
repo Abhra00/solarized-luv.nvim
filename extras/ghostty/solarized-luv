@@ -4,7 +4,7 @@
 # Solarized-luv (Author: Bugs)
 #
 
-palette = 0=#001a21
+palette = 0=#00151a
 palette = 1=#dc322f
 palette = 2=#859900
 palette = 3=#b58900
@@ -21,10 +21,10 @@ palette = 13=#ff1a97
 palette = 14=#36c7bc
 palette = 15=#ffffff
 
-background = #002029
+background = #001a21
 foreground = #93a1a1
 cursor-color = cell-foreground
 cursor-text = cell-background
-selection-background = #08364f
+selection-background = #08334a
 selection-foreground = #93a1a1
 split-divider-color = #32a6f9

@@ -7,11 +7,11 @@ local M = {}
 ---@class Palette
 -- stylua: ignore
 M.palette = {
-  bg           = hsluvToHex({ 222.18, 100.00, 10.51 }),
+  bg           = hsluvToHex({ 219.65, 100.00, 7.66 }),
   bg_highlight = hsluvToHex({ 221.87, 100.00, 15.46 }),
   fg           = hsluvToHex({ 192.18, 15.21, 65.17 }),
-  base00       = hsluvToHex({ 219.19, 100.00, 5.56 }),
-  base01       = hsluvToHex({ 222.18, 100.00, 10.51 }),
+  base00       = hsluvToHex({ 220.09, 100.00, 3.26 }),
+  base01       = hsluvToHex({ 219.65, 100.00, 7.66 }),
   base02       = hsluvToHex({ 221.87, 100.00, 15.46 }),
   base03       = hsluvToHex({ 221.03, 93.76, 20.35 }),
   base04       = hsluvToHex({ 215.33, 34.73, 44.96 }),
