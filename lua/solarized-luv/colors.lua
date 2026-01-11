@@ -80,19 +80,19 @@ function M.setup(opts)
   colors.none = "NONE"
 
   colors.diff = {
-    add = colors.green03,
-    delete = colors.red03,
-    change = colors.yellow03,
+    add = Util.blend_bg(colors.green03, 0.25),
+    delete = Util.blend_bg(colors.red03, 0.25),
+    change = Util.blend_bg(colors.yellow03, 0.25),
     text = colors.blue03,
   }
 
   colors.git = {
-    add = colors.green01,
-    change = colors.yellow01,
-    delete = colors.red01,
+    add = colors.green02,
+    change = colors.yellow02,
+    delete = colors.red02,
+    ignore = colors.base02,
   }
 
-  colors.git.ignore = colors.base03
   colors.black = Util.blend_bg(colors.bg, 0.8, "#000000")
   colors.border_highlight = colors.base03
   colors.border = colors.black

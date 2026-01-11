@@ -46,9 +46,9 @@ function M.get(c, opts)
     SnacksIndent              = { fg = c.base02, nocombine = true },
     SnacksIndentScope         = { fg = c.cyan02, nocombine = true },
     SnacksZenIcon             = { fg = c.violet02 },
-    SnacksInputIcon           = { fg = c.blue02 },
-    SnacksInputBorder         = { fg = c.yellow02 },
-    SnacksInputTitle          = { fg = c.yellow02 },
+    SnacksInputIcon           = { fg = c.blue03 },
+    SnacksInputBorder         = { fg = c.blue02 },
+    SnacksInputTitle          = { fg = c.blue02 },
     -- Picker
     SnacksPickerInputBorder   = { fg = c.border_highlight, bg = c.bg_float },
     SnacksPickerInputTitle    = { fg = c.orange02, bg = c.bg_float },
@@ -58,7 +58,7 @@ function M.get(c, opts)
     SnacksPickerPickWinCurrent= { fg = c.fg, bg = c.magenta04, bold = true },
     SnacksPickerPickWin       = { fg = c.fg, bg = c.bg_search, bold = true },
     SnacksGhLabel             = { fg = c.blue02, bold = true },
-    SnacksGhDiffHeader        = { bg = Util.blend_bg(c.blue03, 0.1), fg = c.blue02 }
+    SnacksGhDiffHeader        = { bg = Util.blend_bg(c.blue03, 0.1), fg = c.blue02 },
   }
   for i, color in ipairs(c.rainbow) do
     ret["SnacksIndent" .. i] = { fg = color, nocombine = true }

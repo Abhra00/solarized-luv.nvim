@@ -15,10 +15,10 @@ function M.get(c, options)
     CursorColumn                = { bg = c.base02 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine                  = { bg = c.base02, sp = c.surface02 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory                   = { fg = c.blue02 }, -- directory names (and other special names in listings)
-    DiffAdd                     = { fg = c.diff.add, bg = c.base02, bold = true }, -- diff mode: Added line |diff.txt|
-    DiffChange                  = { fg = c.diff.change, bg = c.base02, bold = true }, -- diff mode: Changed line |diff.txt|
-    DiffDelete                  = { fg = c.diff.delete, bg = c.base02, bold = true }, -- diff mode: Deleted line |diff.txt|
-    DiffText                    = { fg = c.diff.text, bg = c.base02, bold = true }, -- diff mode: Changed text within a changed line |diff.txt|
+    DiffAdd                     = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
+    DiffChange                  = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
+    DiffDelete                  = { bg = c.diff.delete }, -- diff mode: Deleted line |diff.txt|
+    DiffText                    = { bg = c.diff.text }, -- diff mode: Changed text within a changed line |diff.txt|
     EndOfBuffer                 = { fg = c.base04 }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     ErrorMsg                    = { fg = c.red02, reverse = true }, -- error messages on the command line
     VertSplit                   = { fg = c.surface00 }, -- the column separating vertically split windows
