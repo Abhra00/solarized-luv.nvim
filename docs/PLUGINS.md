@@ -34,4 +34,5 @@
 | [snacks.nvim](https://github.com/folke/snacks.nvim) | [`snacks`](lua/solarized-luv/groups/snacks.lua) |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | [`telescope`](lua/solarized-luv/groups/telescope.lua) |
 | [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) | [`treesitter-context`](lua/solarized-luv/groups/treesitter-context.lua) |
+| [trouble.nvim](https://github.com/folke/trouble.nvim) | [`trouble`](lua/solarized-luv/groups/trouble.lua) |
 | [which-key.nvim](https://github.com/folke/which-key.nvim) | [`which-key`](lua/solarized-luv/groups/which-key.lua) |

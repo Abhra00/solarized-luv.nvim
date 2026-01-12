@@ -6,11 +6,11 @@ M.url = "https://github.com/echasnovski/mini.jump"
 function M.get(c)
   -- stylua: ignore
   return {
-    MiniJump             = { bg = c.magenta03, fg = c.surface05 },
+    MiniJump             = { bg = c.cyan00, fg = c.cyan03 },
     MiniJump2dDim        = "Comment",
-    MiniJump2dSpot       = { fg = c.magenta03, bold = true, nocombine = true },
-    MiniJump2dSpotAhead  = { fg = c.hint, bg = c.bg_dark, nocombine = true },
-    MiniJump2dSpotUnique = { fg = c.orange03, bold = true, nocombine = true },
+    MiniJump2dSpot       = { fg = c.magenta02, bold = true, nocombine = true },
+    MiniJump2dSpotAhead  = { fg = c.hint, bg = c.base00, nocombine = true },
+    MiniJump2dSpotUnique = { fg = c.orange02, bold = true, nocombine = true },
   }
 end
 

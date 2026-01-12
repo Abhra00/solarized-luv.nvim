@@ -5,8 +5,8 @@ local M = {}
 -- map of plugin name to plugin extension
 --- @type table<string, {ext:string, url:string, label:string, subdir?: string, sep?:string}>
 M.extras = {
-  fish             = { ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish" },
-  ghostty          = { ext = "", url = "https://github.com/ghostty-org/ghostty", label = "Ghostty" },
+  fish = { ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish" },
+  ghostty = { ext = "", url = "https://github.com/ghostty-org/ghostty", label = "Ghostty" },
 }
 
 function M.setup()
@@ -21,8 +21,7 @@ function M.setup()
     local info = M.extras[extra]
     local plugin = require("solarized-luv.extra." .. extra)
 
-    -- Since solarized-luv has a single palette (no variants like storm/night/day)
-    -- we just generate one theme file
+    -- load color
     local colors = require("solarized-luv.colors").setup()
     local _, groups, opts = theme.setup({ plugins = { all = true } })
 
