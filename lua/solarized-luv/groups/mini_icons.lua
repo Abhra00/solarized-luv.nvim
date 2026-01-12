@@ -10,7 +10,7 @@ function M.get(c, opts)
     MiniIconsBlue   = { fg = c.blue03 },
     MiniIconsCyan   = { fg = c.cyan02 },
     MiniIconsGreen  = { fg = c.green02 },
-    MiniIconsGrey   = { fg = c.fg },
+    MiniIconsGrey   = { fg = c.base04 },
     MiniIconsOrange = { fg = c.orange02 },
     MiniIconsPurple = { fg = c.violet02 },
     MiniIconsRed    = { fg = c.red02 },

@@ -8,6 +8,7 @@ function M.get(c, options)
   return {
     LazyProgressDone = { bold = true, fg = c.magenta03 },
     LazyProgressTodo = { bold = true, fg = c.base03 },
+    LazyBackDrop = { bold = true, bg = c.base01 },
   }
 end
 

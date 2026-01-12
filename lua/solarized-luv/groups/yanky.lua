@@ -1,12 +1,13 @@
 local M = {}
 
-M.url = "https://github.com/akinsho/bufferline.nvim"
+M.url = "https://github.com/gbprod/yanky.nvim"
 
 ---@type solarized_luv.HighlightsFn
 function M.get(c, opts)
   -- stylua: ignore
   return {
-    BufferLineIndicatorSelected = { fg = c.yellow02 },
+    YankyPut    = "Search",
+    YankyYanked = "IncSearch",
   }
 end
 
