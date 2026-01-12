@@ -115,7 +115,7 @@ function M.setup(opts)
   colors.float_title = colors.blue02
 
   colors.bg_visual = colors.blue00
-  colors.bg_search = colors.yellow01
+  colors.bg_search = colors.blue01
   colors.fg_sidebar = colors.surface00
   colors.fg_float = colors.fg
 
