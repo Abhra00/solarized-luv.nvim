@@ -25,6 +25,6 @@ background = #001a21
 foreground = #93a1a1
 cursor-color = cell-foreground
 cursor-text = cell-background
-selection-background = #08324f
+selection-background = #002b36
 selection-foreground = #93a1a1
 split-divider-color = #32a6f9

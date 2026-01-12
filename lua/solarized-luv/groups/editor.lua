@@ -48,7 +48,7 @@ function M.get(c, options)
     Question                    = { fg = c.cyan02, bold = true }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine                = { bg = c.bg_visual, bold = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search                      = { fg = c.yellow03, bg = c.bg_search }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    IncSearch                   = { fg = c.orange03, bg = c.orange00 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    IncSearch                   = { fg = c.orange03, bg = c.orange01 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch                   = "IncSearch",
     SpecialKey                  = { fg = c.surface00 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad                    = { sp = c.red02, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.

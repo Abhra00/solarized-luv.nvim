@@ -8,7 +8,7 @@ function M.get(c, opts)
   return {
     LeapMatch          = { bg = c.magenta00, fg = c.magenta02, bold = true },
     LeapLabel          = { fg = c.magenta02, bold = true },
-    LeapBackdrop       = { fg = c.base02 },
+    LeapBackdrop       = { fg = c.base01 },
   }
 end
 
