@@ -115,5 +115,5 @@
 - **tokyonight.nvim** — Structural and stylistic inspiration for theme organization  
   https://github.com/folke/tokyonight.nvim
 
-- **solarized-osaka.nvim** — Inspiration for Solarized reinterpretation in Neovim and fot the figma template  
+- **solarized-osaka.nvim** — Inspiration for Solarized reinterpretation in Neovim and for the figma template  
   https://github.com/craftzdog/solarized-osaka.nvim
