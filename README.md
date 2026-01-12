@@ -34,8 +34,14 @@
 | [barbar.nvim](https://github.com/romgrk/barbar.nvim) | [`barbar`](lua/solarized-luv/groups/barbar.lua) |
 | [blink.cmp](https://github.com/Saghen/blink.cmp) | [`blink`](lua/solarized-luv/groups/blink.lua) |
 | [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) | [`bufferline`](lua/solarized-luv/groups/bufferline.lua) |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) | [`cmp`](lua/solarized-luv/groups/cmp.lua) |
+| [nvim-dap](https://github.com/mfussenegger/nvim-dap) | [`dap`](lua/solarized-luv/groups/dap.lua) |
+| [vim-gitgutter](https://github.com/airblade/vim-gitgutter) | [`gitgutter`](lua/solarized-luv/groups/gitgutter.lua) |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | [`gitsigns`](lua/solarized-luv/groups/gitsigns.lua) |
+| [glyph-palette.vim](https://github.com/lambdalisue/glyph-palette.vim) | [`glyph-palette`](lua/solarized-luv/groups/glyph-palette.lua) |
+| [vim-illuminate](https://github.com/RRethy/vim-illuminate) | [`illuminate`](lua/solarized-luv/groups/illuminate.lua) |
 | [lazy.nvim](https://github.com/folke/lazy.nvim) | [`lazy`](lua/solarized-luv/groups/lazy.lua) |
+| [leap.nvim](https://github.com/ggandor/leap.nvim) | [`leap`](lua/solarized-luv/groups/leap.lua) |
 | [mini.animate](https://github.com/echasnovski/mini.animate) | [`mini_animate`](lua/solarized-luv/groups/mini_animate.lua) |
 | [mini.clue](https://github.com/echasnovski/mini.clue) | [`mini_clue`](lua/solarized-luv/groups/mini_clue.lua) |
 | [mini.completion](https://github.com/echasnovski/mini.completion) | [`mini_completion`](lua/solarized-luv/groups/mini_completion.lua) |
@@ -57,11 +63,27 @@
 | [mini.tabline](https://github.com/echasnovski/mini.tabline) | [`mini_tabline`](lua/solarized-luv/groups/mini_tabline.lua) |
 | [mini.test](https://github.com/echasnovski/mini.test) | [`mini_test`](lua/solarized-luv/groups/mini_test.lua) |
 | [mini.trailspace](https://github.com/echasnovski/mini.trailspace) | [`mini_trailspace`](lua/solarized-luv/groups/mini_trailspace.lua) |
+| [nvim-navic](https://github.com/SmiteshP/nvim-navic) | [`navic`](lua/solarized-luv/groups/navic.lua) |
+| [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) | [`neo-tree`](lua/solarized-luv/groups/neo-tree.lua) |
+| [neogit](https://github.com/TimUntersberger/neogit) | [`neogit`](lua/solarized-luv/groups/neogit.lua) |
+| [neotest](https://github.com/nvim-neotest/neotest) | [`neotest`](lua/solarized-luv/groups/neotest.lua) |
 | [noice.nvim](https://github.com/folke/noice.nvim) | [`noice`](lua/solarized-luv/groups/noice.lua) |
 | [nvim-notify](https://github.com/rcarriga/nvim-notify) | [`notify`](lua/solarized-luv/groups/notify.lua) |
+| [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) | [`nvim-tree`](lua/solarized-luv/groups/nvim-tree.lua) |
+| [octo.nvim](https://github.com/pwntester/octo.nvim) | [`octo`](lua/solarized-luv/groups/octo.lua) |
+| [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim) | [`rainbow`](lua/solarized-luv/groups/rainbow.lua) |
+| [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) | [`render-markdown`](lua/solarized-luv/groups/render-markdown.lua) |
+| [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar) | [`scrollbar`](lua/solarized-luv/groups/scrollbar.lua) |
+| [sidekick.nvim](https://github.com/folke/sidekick.nvim) | [`sidekick`](lua/solarized-luv/groups/sidekick.lua) |
 | [snacks.nvim](https://github.com/folke/snacks.nvim) | [`snacks`](lua/solarized-luv/groups/snacks.lua) |
+| [vim-sneak](https://github.com/justinmk/vim-sneak) | [`sneak`](lua/solarized-luv/groups/sneak.lua) |
+| [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim) | [`supermaven`](lua/solarized-luv/groups/supermaven.lua) |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | [`telescope`](lua/solarized-luv/groups/telescope.lua) |
-| [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) | [`treesitter-context`](lua/solarized-luv/groups/treesitter-context.lua) | [which-key.nvim](https://github.com/folke/which-key.nvim) | [`which-key`](lua/solarized-luv/groups/which-key.lua) |
+| [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) | [`treesitter-context`](lua/solarized-luv/groups/treesitter-context.lua) |
+| [trouble.nvim](https://github.com/folke/trouble.nvim) | [`trouble`](lua/solarized-luv/groups/trouble.lua) |
+| [yanky.nvim](https://github.com/gbprod/yanky.nvim) | [`vimwiki`](lua/solarized-luv/groups/vimwiki.lua) |
+| [which-key.nvim](https://github.com/folke/which-key.nvim) | [`which-key`](lua/solarized-luv/groups/which-key.lua) |
+| [yanky.nvim](https://github.com/gbprod/yanky.nvim) | [`yanky`](lua/solarized-luv/groups/yanky.lua) |
 
 
 
