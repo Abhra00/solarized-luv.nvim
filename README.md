@@ -104,7 +104,16 @@
 
 </details>
 
-# Credits
-- [Solarized](https://ethanschoonover.com/solarized/)
-- [Tokyonight](https://github.com/folke/tokyonight.nvim)
-- [Solarized-Osaka](https://github.com/craftzdog/solarized-osaka.nvim)
+## Credits
+
+- **Solarized** — Original color palette by Ethan Schoonover  
+  https://ethanschoonover.com/solarized/
+
+- **HSLuv** — Perceptual color space used for palette transformations  
+  https://www.hsluv.org/
+
+- **tokyonight.nvim** — Structural and stylistic inspiration for theme organization  
+  https://github.com/folke/tokyonight.nvim
+
+- **solarized-osaka.nvim** — Inspiration for Solarized reinterpretation in Neovim and fot the figma template  
+  https://github.com/craftzdog/solarized-osaka.nvim
